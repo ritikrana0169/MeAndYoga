@@ -285,9 +285,7 @@ contact.addEventListener("click",()=>{
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
-
             <input type="submit" value="Submit">
         </form>
     </div>`;
 })
-
