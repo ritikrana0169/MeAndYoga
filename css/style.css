@@ -10,7 +10,8 @@
     /* purple: 250, red:0, olive:50, green:140, blue:230 */
 
     /* HSL color mode*/
-    --first-color:rgb(37, 209, 37);
+    --clock-background:white;
+    --first-color:rgb(226, 120, 21);
     --first-color-second: ;
     --first-color-alt: #b9732f;
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -311,8 +312,8 @@ img {
         width: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 1.5rem 1.5rem 0 0;
+        box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.15);
+        border-radius:0 0 1.5rem 1.5rem;
         transition: 0.5s;
     }
 }
@@ -359,7 +360,8 @@ img {
 
 .show-menu {
     bottom: 65%;
-    top: 40px;
+    /* top: 40px; */
+    /* right: 100%; */
 }
 
 /* ====== ACTIVE LINKS ====== */

@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/calendar.css" />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="./css/calendar.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">  -->
+    <link rel="stylesheet" href="clock.css">
 
 <body>
     <!-- ========== HEADER ========== -->
@@ -21,24 +22,24 @@
         <nav class="nav container">
             <a href="index.html" class="nav_logo"><span>Om Yogic Scie</span>nce of India</a>
             <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list grid">
+                <ul class="nav_list grid" id="nav-close">
                     <li class="nav_item">
-                        <a href="index.html" class="nav_link nav-link home active-link">
+                        <a href="index.html" class="nav_link nav-link home">
                             <i class="uil uil-estate nav_icon"></i> Home
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#aboutUs" class="nav_link nav-link aboutUs">
+                        <a href="#about" class="nav_link nav-link aboutUs">
                             <i class="uil uil-user nav_icon"></i> About Us
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#Meets" class="nav_link nav-link meets">
+                        <a href="#Meets" class="nav_link nav-link meets" >
                             <i class="uil uil-file-alt nav_icon"></i> Meets
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#Events" class="nav_link nav-link Events">
+                        <a href="#Events" class="nav_link nav-link Events" >
                             <i class="uil uil-briefcase-alt nav_icon"></i> Events
                         </a>
                     </li>
@@ -52,17 +53,9 @@
                             <i class="uil uil-message nav_icon"></i> Contact Us
                         </a>
                     </li>
-                    <!-- <li class="nav_item">
-                        <button id="resume-button-1" class="nav-link resume">
-                            <a href="./images/Ritik_Rana_Resume.pdf" class="nav_link" id="resume-link-1"
-                                onclick="window.open('https://drive.google.com/file/d/1oFwVWIxsFsq9QM0gCv2aeP_EbdWDYlqt/view?usp=sharing')"
-                                target="_blank" download>
-                                <i class="uil uil-download-alt nav_icon"></i> Resume
-                            </a>
-                        </button>
-                    </li> -->
+                    
                 </ul>
-                <i class="uil uil-times nav_close" id="nav-close"></i>
+                <!-- <i class="uil uil-times nav_close" id="nav-close"></i> -->
             </div>
             <div class="nav_btns">
                 <!-- ===== Theme Changer ===== -->
@@ -79,9 +72,15 @@
 
     <main class="main">
          
-        <div class="circle">
-            <img src="demo.png" alt="" srcset="">
+        <div class="slider-container">
+            <div class="circle slider">
+                <img src="./slide/demo.png" class="slide" id="slider-image" alt="" srcset="">
+            </div>
         </div>
+
+
+
+        
 
     </main>
 <div class="mainContent">
@@ -93,7 +92,30 @@
     
     
 </div>
+<div class="trainerSec">
+    <h2 style="margin-bottom: 5vh;">Experienced Trainer</h2>
+<img src="./meAdYogaImage/Yoga Stretch.webp" alt="" srcset="">
+<p>I have many years of experience in personal training and have worked with a wide range of athletes to help them hit their fitness targets. Rest assured, I have the skills to mix up your training regime and help to achieve your goals you whilst have fun – no matter if you're training for an athletic milestone like a marathon or just want to get in shape for a beachside holiday.</p>
 
+</div>
+<div class="trainerSec">
+    <h2 style="margin-bottom: 5vh; ">Bespoke Training for You</h2>
+<img  src="./meAdYogaImage/yoga2.jpg" alt="" srcset="">
+<p>We do not only provide you with an online training service but we also regularly keep track of your progress. Since motivation is essential to getting the most out of any fitness training programme, we ensure that you have direct access to your personal trainer whenever you need them. We provide you with all the tools to unlock your potential, and we will support you on your fitness journey.</p>
+
+</div>
+<h2 style="margin-top: 5vh;">Start Today</h2>
+<div class="cloclSec">
+    <div class="clockM">
+        <second class="clock">
+          <div class="seconds"></div>
+          <div class="minutes"></div>
+          <div class="minute">44</div>
+          <div class="hour"></div>
+        </second>
+        </div>
+<p>Unlock your potential, transform your life with yoga. Embrace strength, flexibility, and inner peace. Inhale positivity, exhale stress. Your journey to a healthier, happier you starts now. Don't wait for tomorrow, take the first step on your mat today. Yoga is not just a practice, it's a path to a vibrant and balanced life. Join us, and let's embark on this transformative journey together.</p>
+</div>
 
 </div>
 
@@ -112,13 +134,13 @@
             unlock your potential, and we will support you on your fitness journey.
           </p>
         
-          <div class="social">
+          <!-- <div class="social">
             <i class="fa-brands fa-facebook-square"></i>
             <i class="fa-brands fa-instagram-square"></i>
             <i class="fa-brands fa-twitter-square"></i>
             <i class="fa-brands fa-youtube-square"></i>
             <i class="fa-brands fa-whatsapp-square"></i>
-          </div>
+          </div> -->
         </div>
         
         <div class="column links">
@@ -130,42 +152,48 @@
            <a href="https://instagram.com/ashutoshaggarwal1105?igshid=MzRlODBiNWFlZA==">Instagram</a>
           </li>
           <li>
-           <a href="https://wa.me/9634843557?text=Hello%20from%20our%20website">Whatsapp Me</a>
+            <a href="https://wa.me/+918791446782?text=Hello%20from%20Your%20website">Whatsapp Me</a>
           </li>
           <li>
            <a href="#terms-of-services">Twitter</a>
           </li>
           <li>
-           <a href="#support">Youtube</a>
+           <a href="https://www.google.com/maps/place/Dabbar+Patti+Rd,+Dhanaura+Silvernagar,+Uttar+Pradesh+250611/@29.0379427,77.3379008,17z/data=!4m6!3m5!1s0x390c4fadd96180ef:0x9052fac29c5a1b74!8m2!3d29.0377218!4d77.3378474!16s%2Fg%2F11fp1fx8ym"> Location</a>
           </li>
          </ul>
         
         </div>
-        
-<!--         
+
         <div class="column links">
-          <h3>Some Links</h3>
-           <ul>
-            <li>
-             <a href="#faq">F.A.Q</a>
-            </li>
-            <li>
-             <a href="#cookies-policy">Cookies Policy</a>
-            </li>
-            <li>
-            <a href="#terms-of-services">Terms Of Service</a>
-            </li>
-            <li>
-            <a href="#support">Support</a>
-            </li>
-          </ul>
-        </div> -->
+            <h3>Social Links</h3>
+            
+             <ul>
+            
+              <li>
+               <a href="https://instagram.com/ashutoshaggarwal1105?igshid=MzRlODBiNWFlZA==">Instagram</a>
+              </li>
+              <li>
+               <a href="https://wa.me/8791446782?text=Hello%20from%20Your%20website">Whatsapp Me</a>
+              </li>
+              <li>
+               <a href="#terms-of-services">Twitter</a>
+              </li>
+              <li>
+               <a href="#support">Youtube</a>
+              </li>
+             </ul>
+            </div>
+            
+            
+<div class="column links"><h3>Address</h3>
+    <p style="margin-top: 5vh; text-align: left;">Near Sanmati Hospital Gandhi Road Baraut, baghpat 250611</p>
+    <p style="text-align: left;">Contact: 8791446782</p></div>
+
         
         <div class="column subscribe">
-          <div>
-            <a href="mailto:your-email@example.com"><button>Mail Us</button></a>
+          <div style="margin-top: 5vh;">
+            <a href="mailto:omyogicscienceofindia@gmail.com"><button>Mail Us</button></a>
 
-   
           </div>
         
         </div>
@@ -173,8 +201,8 @@
         </div>
         
         <div class="row copyright">
-          
-          <a style="color: white;" href="https://ritikrana0169.github.io/"><p>Copyright &copy; 2023 Ritik rana</p></a> 
+    
+          <a style="color: white;" href="https://github.com/ritikrana0169/"><p>Copyright &copy; 2023 Ritik rana</p></a> 
         </div>
         </footer>
     
@@ -182,32 +210,16 @@
 <!-- Footer -->
 
     <!-- ========== SCROLL TOP ========== -->
-    <a href="#home" class="scrollup" id="scroll-up">
+    <!-- <a href="#home" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup_icon"></i>
-    </a>
+    </a> -->
 
 
     <!-- ==================== JAVASCRIPT LINKED FILES ==================== -->
     <script src="./script/script.js"></script>
-    <script src="./script/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ==================== AUTO-TYPE SCRIPT ==================== -->
-   
-
-    <!-- ==================== PROJECT SLIDER ==================== -->
     
-</body>
-
-
-</div>
-
-<script src="script.js"></script>
-</body>
-</div>
-
-<script src="script.js"></script>
+   
+    <script src="./script/slider.js"></script>
+    <script src="./script/clock.js"></script>
 </body>
 </html>

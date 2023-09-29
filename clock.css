@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.clockM {
+  /* background: #000; */
+  margin: 0;
+  height: 21rem;
+  color: var(--form-font);
+  font-family: "Comfortaa", cursive;
+  position: relative;
+}
+
+.clock {
+  --clock-size: 250px;
+  width: var(--clock-size);
+  height: var(--clock-size);
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+.spike {
+  position: absolute;
+  width: 9px;
+  height: 1px;
+  background: var(--form-font);
+  line-height: 20px;
+  transform-origin: 50%;
+  z-index: 5;
+  inset: 0;
+  margin: auto;
+  font-style: normal;
+  transform: rotate(var(--rotate)) translateX(var(--dail-size));
+}
+.spike:nth-child(5n+1) {
+  box-shadow: -7px 0 red;
+}
+.spike:nth-child(5n+1):after {
+  content: attr(data-i);
+  position: absolute;
+  right: 22px;
+  top: -10px;
+  transition: 1s linear;
+  transform: rotate(calc( var(--dRotate) - var(--rotate)));
+}
+
+.seconds {
+  --dRotate: 0deg;
+  --dail-size: calc((var(--clock-size)/ 2) - 8px);
+  font-weight: 800;
+  font-size: 13px;
+  transform: rotate(calc( -1 * var(--dRotate)));
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  transition: 1s linear;
+}
+
+.minutes {
+  --dail-size: calc((var(--clock-size)/ 2) - 65px);
+  font-size: 10px;
+  transform: rotate(calc( -1 * var(--dRotate)));
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  transition: 1s linear;
+}
+
+.stop-anim {
+  transition: 0s linear;
+}
+.stop-anim .spike:after {
+  transition: 0s linear !important;
+}
+
+.hour {
+  font-size: 32px;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.minute {
+  font-size: 28px;
+  width: 3rem;
+  color: aliceblue;
+  font-weight: 900;
+  position: absolute;
+  background: rgb(48, 47, 47);
+  border-radius: 17px;
+  z-index: 10;
+  right: calc(var(--clock-size)/ 4.5);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.minute:after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  border: 2px solid  rgba(218, 68, 13, 0.568);
+  border-right: none;
+  height: 50px;
+  left: -10px;
+  top: 50%;
+  /* background-color: rgba(243, 83, 25, 0.568); */
+  border-radius: 40px 0 0 40px;
+  width: calc(var(--clock-size)/ 2.75);
+  transform: translatey(-50%);
+}

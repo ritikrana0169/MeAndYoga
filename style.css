@@ -6,21 +6,21 @@
    align-items: center;
 }
 .circle{
-margin-top: 6vh;
+margin-top: 11vh;
     width: 21rem;
     margin-left:auto;
     margin-right:  auto;
     height: 21rem;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(240, 238, 238);
     display: flex;
     justify-content: center;
-    filter: drop-shadow(0 0 20px rgb(7, 252, 252));
+    filter: drop-shadow(0 0 20px rgb(248, 83, 6));
 }
 .circle img{
-width: 22rem;
-height: 24rem;
-filter: drop-shadow(0 0 8px rgb(25, 116, 25));
+    width: 22rem;
+    height: 22rem;
+    filter: drop-shadow(0 0px 5px rgb(44, 184, 9));
 }
 
 .mainContent{
@@ -58,12 +58,12 @@ filter: drop-shadow(0 0 8px rgb(25, 116, 25));
 }
 .btnAnimate::before{
     content: "";
-    background-image: conic-gradient(rgb(37, 209, 37) 20deg,
+    background-image: conic-gradient(rgb(248, 83, 6) 180deg,
     transparent 120deg);
     width: 200%;
     height: 80%;
     position: absolute;
-    animation: rotate 2s linear infinite;
+    animation: rotate 1.5s linear infinite;
 }
 .btnAnimate::after{
     content: "Call Us";
@@ -75,7 +75,7 @@ filter: drop-shadow(0 0 8px rgb(25, 116, 25));
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #83eded;
+    color: rgb(44, 184, 9);
     font-size: larger;
     letter-spacing: 5px;
     box-shadow: inset 20px 20px 20px #0000008c;
@@ -190,7 +190,9 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #007BFF;
+    background-color: rgb(248, 83, 6);
+    
+    font-weight: 700;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 4px;
@@ -199,5 +201,49 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #0fbd18;
+}
+
+
+
+/* slider css */
+
+
+/* Style the slider */
+.slider {
+    display: flex;
+
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease; /* Add a smooth zoom transition */
+}
+
+
+/* Hide the image initially */
+.slide[src=""] {
+    display: none;
+}
+
+.trainerSec{
+    margin-top: 5vh auto 0 auto;
+
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.trainerSec img{
+    width: 23rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 23rem;
+    border-radius: 10px;
+}
+.trainerSec p{
+    margin-top: 5vh;
+}
+.column p{
+opacity: 0.7;
 }
