@@ -20,7 +20,7 @@ margin-top: 11vh;
 .circle img{
     width: 22rem;
     height: 22rem;
-    filter: drop-shadow(0 0px 5px rgb(44, 184, 9));
+    filter: drop-shadow(0 0px 5px var(--first-color));
 }
 
 .mainContent{
@@ -43,7 +43,7 @@ margin-top: 11vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #181818;
+    /* background: #181818; */
 }
 .btnAnimate {
     width: 200px;
@@ -58,7 +58,7 @@ margin-top: 11vh;
 }
 .btnAnimate::before{
     content: "";
-    background-image: conic-gradient(rgb(248, 83, 6) 180deg,
+    background-image: conic-gradient(var(--first-color) 180deg,
     transparent 120deg);
     width: 200%;
     height: 80%;
@@ -75,7 +75,7 @@ margin-top: 11vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(44, 184, 9);
+    color: var(--first-color);
     font-size: larger;
     letter-spacing: 5px;
     box-shadow: inset 20px 20px 20px #0000008c;
@@ -190,7 +190,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: rgb(248, 83, 6);
+    background-color: var(--first-color);
     
     font-weight: 700;
     color: rgb(0, 0, 0);
@@ -233,6 +233,9 @@ input[type="submit"]:hover {
     width: 100%;
     /* border: 1px solid red; */
 }
+.trainerSec h2{
+    margin-top: 6vh;
+}
 .trainerSec img{
     width: 23rem;
     text-align: center;
@@ -245,5 +248,5 @@ input[type="submit"]:hover {
     margin-top: 5vh;
 }
 .column p{
-opacity: 0.7;
+   color: #a7a7a7;
 }

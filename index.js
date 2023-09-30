@@ -9,3 +9,4 @@ function close(){
   barContainer.classList.toggle("active");
     sidebar.classList.toggle("active");
 }
+

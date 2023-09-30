@@ -59,7 +59,7 @@ aboutUs.addEventListener("click",()=>{
     
 mainContent2.innerHTML="";
 mainContent.innerHTML="";
-mainContent.innerHTML='<div class="aboutUsMain"> <div> <img src="./meAdYogaImage/children.png" alt="" srcset=""> <p>Best for Kids</p></div> <div><img src="./meAdYogaImage/24-hours.png" alt="" srcset=""><p>24 hours Availablity</p></div> <div> <img src="./meAdYogaImage/coach.png" alt="" srcset=""><p>Certified Trainer</p></div> <div> <img src="./meAdYogaImage/classs.png" alt="" srcset=""><p>Online classes</p></div> <div> <img src="./meAdYogaImage/buddy.png" alt="" srcset=""><p>Friendly Environment</p></div></div>';
+mainContent.innerHTML=`<div class="aboutUsMain"> <div> <img src="./meAdYogaImage/children.png" alt="" srcset=""> <p>Best for Kids</p></div> <div><img src="./meAdYogaImage/24-hours.png" alt="" srcset=""><p>24 hours Availablity</p></div> <div> <img src="./meAdYogaImage/coach.png" alt="" srcset=""><p>Certified Trainer</p></div> <div> <img src="./meAdYogaImage/classs.png" alt="" srcset=""><p>Online classes</p></div> <div> <img src="./meAdYogaImage/buddy.png" alt="" srcset=""><p>Friendly Environment</p></div></div>`;
 
 })
 var meets=document.querySelector(".meets");

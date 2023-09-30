@@ -31,7 +31,7 @@ footer {
     margin-top: 5vh;
     width: 100%;
     text-align: center;
-    color: rgb(252, 174, 7);
+    color: var(--first-color);
     font-size: 1.4em;
     white-space: nowrap;
   }
@@ -66,8 +66,12 @@ footer {
     margin-bottom: 5px;
   }
   button {
-    background-color: rgb(25, 116, 25);
+    background-color:var(--first-color);
     color: #ffffff;
+  }
+  button:hover{
+    background-color:rgb(201, 75, 3);
+    cursor: pointer;
   }
   div.social {
     display: flex;
