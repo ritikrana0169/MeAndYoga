@@ -2,7 +2,7 @@
 *, *:after, *:before {
   box-sizing: border-box;
 }
-
+ 
 .clockM {
   /* background: #000; */
   margin: 0;
